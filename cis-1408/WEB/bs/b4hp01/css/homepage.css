@@ -1,7 +1,7 @@
 /*
 BootstrapCreative
 Created by: Jacob Lett
-Licensed MIT 
+Licensed MIT
 2019
 
 1 rem    = 16px
@@ -28,6 +28,42 @@ G R I D  &  T Y P E
 ####################################################
 */
 
+body {
+  background: #e2e2e2;
+}
+
+/* Set a display font for headings and quotes */
+h1, h2, h3, h4, h5,
+.navbar-brand, blockquote p,
+.display-1, .display-2, .display-3, .display-4 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+section {
+  overflow: hidden;
+}
+
+.blockquote-footer {margin-top:0.5rem;}
+
+#footer {
+  background-color: #292b2c;
+  color: #808080;
+}
+
+#footer a,
+#footer a:hover,
+#footer a:active {
+  color: #ccc;
+}
+
+#footer .nav-link:hover {
+  text-decoration: underline;
+}
+
+footer .form-control {
+  border:none;
+}
 
 
 
@@ -41,7 +77,46 @@ U T I L I T I E S
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
 Background utilities
 */
+.bg-parallax {
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
+/* cards have a white background by default and this class helps you make them transparent */
+.bg-none {
+  background-color: transparent;
+}
+
+.text-light a {color:#fff!important;}
+
+.bg-faded-1 {
+  background-color: #c5c8c9;
+}
+
+.bg-faded-1 {
+  background-color: #c5c8c9;
+}
+
+.bg-faded-2 {
+  background-color: #93989a;
+}
+
+.bg-faded-3 {
+  background-color: #585d5f;
+}
+
+.bg-faded-4 {
+  background-color: #3c3f40;
+}
+
+.bg-faded-5 {
+  background-color: #292b2c;
+}
 
 
 /*
@@ -50,7 +125,25 @@ Image Border
 Applies a light gray border based on class
 all, top, right, bottom, left
 */
+.img-border {
+  border: 1px solid #808080;
+}
 
+.img-border-t {
+  border-top: 1px solid #808080;
+}
+
+.img-border-r {
+  border-right: 1px solid #808080;
+}
+
+.img-border-b {
+  border-bottom: 1px solid #808080;
+}
+
+.img-border-l {
+  border-left: 1px solid #808080;
+}
 
 
 
@@ -59,7 +152,61 @@ all, top, right, bottom, left
 Overlay Background Color
 Helps darken or lighten image that has text on top
 */
+.overlay,
+.overlay {
+  position: relative;
+}
 
+.overlay:before,
+.overlay:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+
+.overlay-b-1:before {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.overlay-b-2:before {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.overlay-b-3:before {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.overlay-b-4:before {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.overlay-b-5:before {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.overlay-w-1:before {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.overlay-w-2:before {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.overlay-w-3:before {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.overlay-w-4:before {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.overlay-w-5:before {
+  background: rgba(255, 255, 255, 0.9);
+}
 
 
 
@@ -75,7 +222,21 @@ C O M P O N E N T S
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
 Navbar
 */
+.navbar {
+  border-bottom:2px solid #0275d8;
+}
+.navbar-brand span {
+  color: #89969e;
+}
 
+#navbar-call i {
+  vertical-align: middle;
+  line-height: 40px;
+}
+
+.fixedsticky {
+  top: 0;
+}
 
 
 
@@ -84,7 +245,30 @@ Navbar
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
 Carousel
 */
+.carousel {
+  background-color: #191919;
+}
 
+.carousel-caption {
+  top: 10%;
+}
+
+/* The description text interferes with the indicator nav
+so this hides on narrow mobile
+*/
+.carousel-caption p {
+  display:none;
+}
+@media (min-width: 500px) {
+  .carousel-caption p {
+    display:block;
+  }
+}
+
+/* centers the carousel image on super wide screens */
+.carousel-item img {
+  margin:0 auto;
+}
 
 
 
@@ -95,7 +279,37 @@ Carousel
 Card navigation with right angle character
 http://stackoverflow.com/questions/13233991/combine-after-with-hover
 */
+.card .nav-item {
+  position: relative;
+}
 
+.card .nav-link:hover {
+  text-decoration: underline;
+}
+
+.card .nav-item:after {
+  content: "\f054";
+  font-family: FontAwesome;
+  font-size: 60%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  padding: .5em 0;
+  line-height: 2rem;
+  color: #0275d8;
+}
+
+/* image card with dark backgrounds to have white links */
+.card.bg-dark .nav-link,
+.card.bg-dark .nav-item:after {
+  color: #fff;
+}
+
+/* image card with light backgrounds to have dark links */
+.card.bg-light a {
+  color: inherit;
+}
 
 
 
@@ -104,8 +318,22 @@ http://stackoverflow.com/questions/13233991/combine-after-with-hover
 /*
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
 Quote
-Change background image tall (800 x 800) to wide (1500 x 800) 
+Change background image tall (800 x 800) to wide (1500 x 800)
 dimensions are increased slightly to account for retina displays
 */
+#quote {
+  background-image: url('../img/quote-800x800.jpg');
+}
 
+#quote p {
+  font-size: 2.5rem;
+}
 
+@media (min-width: 600px) {
+  #quote {
+    background-image: url('../img/quote-1500x800.jpg');
+  }
+  #quote p {
+    font-size: 3.5rem;
+  }
+}
