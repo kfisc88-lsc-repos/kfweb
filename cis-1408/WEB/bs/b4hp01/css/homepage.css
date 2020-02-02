@@ -1,0 +1,111 @@
+/*
+BootstrapCreative
+Created by: Jacob Lett
+Licensed MIT 
+2019
+
+1 rem    = 16px
+.75 rem  = 12px
+.5 rem   = 8px
+.25 rem  = 4px
+
+Bootstrap 4 breakpoints
+@media (min-width: 576px) { }
+@media (min-width: 768px) { }
+@media (min-width: 992px) { }
+@media (min-width: 1200px) { }
+
+Colors
+#0275d8 - primary blue
+#636c72 - light gray
+#292b2c - black
+*/
+
+
+/*
+####################################################
+G R I D  &  T Y P E
+####################################################
+*/
+
+
+
+
+/*
+####################################################
+U T I L I T I E S
+####################################################
+*/
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Background utilities
+*/
+
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Image Border
+Applies a light gray border based on class
+all, top, right, bottom, left
+*/
+
+
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Overlay Background Color
+Helps darken or lighten image that has text on top
+*/
+
+
+
+
+/*
+####################################################
+C O M P O N E N T S
+####################################################
+*/
+
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Navbar
+*/
+
+
+
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Carousel
+*/
+
+
+
+
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Card navigation with right angle character
+http://stackoverflow.com/questions/13233991/combine-after-with-hover
+*/
+
+
+
+
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Quote
+Change background image tall (800 x 800) to wide (1500 x 800) 
+dimensions are increased slightly to account for retina displays
+*/
+
+
