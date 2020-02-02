@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>BootstrapCreative | Design + Development + Marketing</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicons - http://realfavicongenerator.net/ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="img/favicons/manifest.json">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Open Graph and Schema if needed goes below this line - https://webcode.tools/open-graph-generator/business -->
+
+    <!--
+    ####################################################
+    C S S - bootstrap, custom styles
+    ####################################################
+    -->
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <!-- Lato Display Font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/homepage.css" rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+
+
+    <!--
+    ####################################################
+    N A V B A R
+    ####################################################
+    -->
+    <!-- If you need sticky-top to work in lower versions of IE https://github.com/filamentgroup/fixed-sticky -->
+   <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+       <!-- One of the primary actions on mobile is to call a business - This displays a phone button on mobile only -->
+
+       <div class="navbar-toggler-right">
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+           </button>
+       </div>
+
+       <a class="navbar-brand" href="#">
+           <img src="img/bootstrapcreative-icon.svg" width="25" height="25" class="d-inline-block align-top" alt="">
+           <span class="">BootstrapCreative </span>
+       </a>
+
+       <div class="collapse navbar-collapse" id="navbar">
+           <nav class="nav d-flex flex-column flex-md-row w-100 justify-content-end">
+               <a class="flex-fill text-center text-light nav-link" href="#about">About</a>
+               <a class="flex-fill text-center text-light nav-link" href="#services">Services</a>
+               <a class="flex-fill text-center text-light nav-link" href="#contact">Contact</a>
+           </nav>
+       </div>
+   </nav>
+
+
+
+    <!--
+    ####################################################
+    C A R O U S E L
+    ####################################################
+    -->
+    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000">
+       <ol class="carousel-indicators">
+           <li data-target="#carousel" data-slide-to="0" class="active"></li>
+           <li data-target="#carousel" data-slide-to="1"></li>
+           <li data-target="#carousel" data-slide-to="2"></li>
+       </ol>
+       <div class="carousel-inner" role="listbox">
+           <div class="carousel-item active">
+               <a href="">
+                   <!--
+                   If you need more browser support use https://scottjehl.github.io/picturefill/
+                   If a picture looks blurry on a retina device you can add a high resolution like this
+                   <source srcset="img/blog-post-1000x600-2.jpg, blog-post-1000x600-2@2x.jpg 2x" media="(min-width: 768px)">
+
+                   What image sizes should you use? This can help - https://codepen.io/JacobLett/pen/NjramL
+                    -->
+                    <picture>
+                     <source srcset="img/carousel-2000x400-1.jpg" media="(min-width: 1400px)">
+                     <source srcset="img/carousel-1400x400-1.jpg" media="(min-width: 768px)">
+                      <source srcset="img/carousel-800x400-1.jpg" media="(min-width: 576px)">
+                     <img srcset="img/carousel-600x400-1.jpg" alt="responsive image" class="d-block img-fluid">
+                   </picture>
+
+                   <div class="carousel-caption">
+                       <div>
+                           <h2>Digital Craftsmanship</h2>
+                           <p>We meticously build each site to get results</p>
+                           <span class="btn btn-sm btn-outline-secondary">Learn More</span>
+                       </div>
+                   </div>
+               </a>
+           </div>
+           <!-- /.carousel-item -->
+           <div class="carousel-item">
+               <a href="">
+                   <!--
+                   If you need more browser support use https://scottjehl.github.io/picturefill/
+                   If a picture looks blurry on a retina device you can add a high resolution like this
+                   <source srcset="img/blog-post-1000x600-2.jpg, blog-post-1000x600-2@2x.jpg 2x" media="(min-width: 768px)">
+
+                   What image sizes should you use? This can help - https://codepen.io/JacobLett/pen/NjramL
+                    -->
+                    <picture>
+                     <source srcset="img/carousel-2000x400-2.jpg" media="(min-width: 1400px)">
+                     <source srcset="img/carousel-1400x400-2.jpg" media="(min-width: 768px)">
+                      <source srcset="img/carousel-800x400-2.jpg" media="(min-width: 576px)">
+                     <img srcset="img/carousel-600x400-2.jpg" alt="responsive image" class="d-block img-fluid">
+                   </picture>
+
+                   <div class="carousel-caption justify-content-center align-items-center">
+                       <div>
+                           <h2>Every project begins with a sketch</h2>
+                           <p>We work as an extension of your business to explore solutions</p>
+                           <span class="btn btn-sm btn-outline-primary">Our Process</span>
+                       </div>
+                   </div>
+               </a>
+           </div>
+           <!-- /.carousel-item -->
+           <div class="carousel-item">
+               <a href="">
+                   <!--
+                   If you need more browser support use https://scottjehl.github.io/picturefill/
+                   If a picture looks blurry on a retina device you can add a high resolution like this
+                   <source srcset="img/blog-post-1000x600-2.jpg, blog-post-1000x600-2@2x.jpg 2x" media="(min-width: 768px)">
+
+                   What image sizes should you use? This can help - https://codepen.io/JacobLett/pen/NjramL
+                    -->
+                    <picture>
+                     <source srcset="img/carousel-2000x400-3.jpg" media="(min-width: 1400px)">
+                     <source srcset="img/carousel-1400x400-3.jpg" media="(min-width: 768px)">
+                      <source srcset="img/carousel-800x400-3.jpg" media="(min-width: 576px)">
+                     <img srcset="img/carousel-600x400-3.jpg" alt="responsive image" class="d-block img-fluid">
+                   </picture>
+
+                   <div class="carousel-caption justify-content-center align-items-center">
+                       <div>
+                           <h2>Performance Optimization</h2>
+                           <p>We monitor and optimize your site's long-term performance</p>
+                           <span class="btn btn-sm btn-secondary">Learn How</span>
+                       </div>
+                   </div>
+               </a>
+           </div>
+           <!-- /.carousel-item -->
+       </div>
+       <!-- /.carousel-inner -->
+       <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="sr-only">Previous</span>
+       </a>
+       <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="sr-only">Next</span>
+       </a>
+   </div>
+   <!-- /.carousel -->
+
+    <!--
+    ####################################################
+    I M A G E   C A R D S
+    ####################################################
+    -->
+    <section id="image-cards" class="">
+        <div class="container-fluid marketing px-0">
+            <!-- Three columns of text below the carousel -->
+            <div class="row no-gutters">
+                <div class="col-lg-3 col-sm-6 ">
+                    <div class="card bg-light">
+                        <a href="">
+                            <img class="card-img img-fluid" src="img/image-cards-600x300-4.jpg" alt="Card image">
+                            <div class="card-img-overlay text-center">
+                                <h5 class="card-title">Strategy <small>& Planning</small></h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card bg-light">
+                        <a href="">
+                            <img class="card-img img-fluid" src="img/image-cards-600x300-1.jpg" alt="Card image">
+                            <div class="card-img-overlay text-center">
+                                <h5 class="card-title">UI Design</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-3  col-sm-6">
+                    <div class="card bg-light">
+                        <a href="">
+                            <img class="card-img img-fluid" src="img/image-cards-600x300-2.jpg" alt="Card image">
+                            <div class="card-img-overlay text-center">
+                                <h5 class="card-title">Development <small>& Hosting</small></h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card bg-light">
+                        <a href="">
+                            <img class="card-img img-fluid" src="img/image-cards-600x300-3.jpg" alt="Card image">
+                            <div class="card-img-overlay text-center">
+                                <h5 class="card-title">Marketing <small>& Optimization</small></h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- /.col-lg-4 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /#marketing-tiles  -->
+
+    <!--
+    ####################################################
+    C A S E S T U D Y 1
+    ####################################################
+    -->
+    <section id="case-study-1" class="my-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7 py-5">
+                    <small>Case Study</small>
+                    <h2>How we increased our blog's readership by 45% in three months</h2>
+                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
+                    <a href="" class="btn btn-primary btn-md">Read case study</a>
+                </div>
+                <!-- /.col-md-7 -->
+                <div class="col-md-5 align-self-end">
+                    <img class="img-fluid mx-auto img-border-b" src="img/mobile-screenshot.png" alt="First slide">
+                </div>
+                <!-- /.col-md-5 -->
+            </div>
+        </div>
+    </section>
+    <!-- #case-study-1 -->
+
+    <!--
+    ####################################################
+    Q U O T E
+    ####################################################
+    -->
+    <section id="quote" class="bg-parallax py-5 mt-3">
+       <div class="container">
+           <blockquote class="blockquote py-5 text-center border-0">
+               <p class="mb-0 display-4">It’s much easier to double your business by doubling your conversion rate than by doubling your traffic.</p>
+               <footer class="blockquote-footer ">Jeff Eisenberg</footer>
+           </blockquote>
+       </div>
+       <!-- /.container -->
+   </section>
+
+    <!--
+    ####################################################
+    C A S E S T U D Y 2
+    ####################################################
+    -->
+    <section id="case-study-2" class="my-5">
+       <div class="container">
+           <div class="row align-items-center">
+               <div class="col-md-7 push-md-5 py-5">
+                   <small>Case Study</small>
+                   <h2>Going responsive helped CompanyX grow their organic search traffic by 45%</h2>
+                   <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
+                   <a href="" class="btn btn-primary btn-md">Read case study</a>
+               </div>
+               <!-- /.col-md-7 -->
+               <div class="col-md-5 pull-md-7 align-self-end">
+                   <img class="img-fluid mx-auto img-border-b" src="img/mobile-screenshot.png" alt="First slide">
+               </div>
+               <!-- /.col-md-5 -->
+           </div>
+       </div>
+   </section>
+   <!-- #case-study-2 -->
+
+    <!--
+    ####################################################
+    B L O G  P O S T S
+    ####################################################
+    -->
+    <section id="blog-posts" class="overflow-h">
+       <div class="row">
+           <div class="col-md-6 pl-0">
+               <div class="card bg-dark text-light overlay overlay-b-3 border-0">
+                   <!--
+                   If you need more browser support use https://scottjehl.github.io/picturefill/
+                   If a picture looks blurry on a retina device you can add a high resolution like this
+                   <source srcset="img/blog-post-1000x600-2.jpg, blog-post-1000x600-2@2x.jpg 2x" media="(min-width: 768px)">
+
+                   What image sizes should you use? This can help - https://codepen.io/JacobLett/pen/NjramL
+                    -->
+                   <picture>
+                       <source srcset="img/blog-post-1000x600-1.jpg" media="(min-width: 768px)">
+                       <source srcset="img/blog-post-800x400-1.jpg" media="(min-width: 576px)">
+                       <img srcset="img/blog-post-800x600-1.jpg" alt="responsive image" class="card-img img-fluid">
+                   </picture>
+
+                   <div class="card-img-overlay text-center mt-4">
+                       <h4 class="card-title">Is Your Responsive Site Painfully Slow on Mobile?</h4>
+                       <div class="card-text">
+                           <p>Learn how responsive design is more about your customer than it is about you.</p>
+                           <ul class="nav justify-content-center">
+                               <li class="nav-item">
+                                   <a class="nav-link active" href="#">Read Article</a>
+                               </li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+               <!-- /.card -->
+           </div>
+           <!-- /.col-sm-6 -->
+           <div class="col-md-6 pr-0 pt-2 pt-md-0">
+               <div class="card bg-dark text-light overlay overlay-b-3 border-0">
+                   <!--
+                   If you need more browser support use https://scottjehl.github.io/picturefill/
+                   If a picture looks blurry on a retina device you can add a high resolution like this
+                   <source srcset="img/blog-post-1000x600-2.jpg, blog-post-1000x600-2@2x.jpg 2x" media="(min-width: 768px)">
+
+                   What image sizes should you use? This can help - https://codepen.io/JacobLett/pen/NjramL
+                    -->
+                   <picture>
+                       <source srcset="img/blog-post-1000x600-2.jpg" media="(min-width: 768px)">
+                       <source srcset="img/blog-post-800x400-2.jpg" media="(min-width: 576px)">
+                       <img srcset="img/blog-post-800x600-2.jpg" alt="responsive image" class="card-img img-fluid">
+                   </picture>
+
+                   <div class="card-img-overlay text-center mt-4">
+                       <h4 class="card-title">How to Use Google Analytics Event Goals as AdWords Conversions</h4>
+                       <div class="card-text">
+                           <p>Learn how you can track downloads or video plays as a conversion.</p>
+                           <ul class="nav justify-content-center">
+                               <li class="nav-item">
+                                   <a class="nav-link active" href="#">Read Article</a>
+                               </li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+               <!-- /.card -->
+           </div>
+           <!-- /.col-sm-6 -->
+       </div>
+   </section>
+
+    <!--
+    ####################################################
+    S E R V I C E S
+    ####################################################
+    -->
+    <section id="services" class="my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-center border-0 bg-none">
+                        <div class="card-body">
+                            <p>
+                                <i class="fa fa-id-card-o fa-2x" aria-hidden="true"></i>
+                            </p>
+                            <h5 class="card-title">Design</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <ul class="nav justify-content-center">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Learn More</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /.card -->
+                </div>
+                <!-- /.col-md-4 -->
+                <div class="col-md-4">
+                    <div class="card text-center border-0 bg-none">
+                        <div class="card-body">
+                            <p>
+                                <i class="fa fa-cogs fa-2x" aria-hidden="true"></i>
+                            </p>
+                            <h5 class="card-title">Development</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <ul class="nav justify-content-center">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Learn More</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /.card -->
+                </div>
+                <!-- /.col-md-4 -->
+                <div class="col-md-4">
+                    <div class="card text-center border-0 bg-none">
+                        <div class="card-body">
+                            <p>
+                                <i class="fa fa-bar-chart fa-2x" aria-hidden="true"></i>
+                            </p>
+                            <h5 class="card-title">Marketing</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <ul class="nav justify-content-center">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Learn More</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /.card -->
+                </div>
+                <!-- /.col-md-4 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+
+    <!--
+    ####################################################
+    B R A N D  M E S S A G E
+    ####################################################
+    -->
+    <section id="brand-message" class="bg-primary py-3">
+       <div class="container text-light text-center">
+         Design <span class="text-light">+</span> Development <span class="text-light">+</span> Marketing
+       </div>
+       <!-- /.container -->
+   </section>
+
+
+
+    <!--
+    ####################################################
+    F O O T E R
+    ####################################################
+    -->
+    <footer class="py-5" id="footer">
+       <div class="container">
+           <div class="row">
+               <div class="col-md-3">
+                   <div class="row">
+                       <div class="col-sm-6 col-md-12">
+                           <h4>Navigation</h4>
+                           <nav class="nav d-flex flex-column">
+                               <a class="nav-link" href="#">About</a>
+                               <a class="nav-link" href="#">Services</a>
+                               <a class="nav-link" href="#">Blog</a>
+                           </nav>
+                       </div>
+                       <div class="col-sm-6 col-md-12">
+                           <h5 class="mt-3 mt-sm-0 mt-md-3">Follow Us</h5>
+                           <!-- https://bootstrapcreative.com/pattern/custom-social-media-share-buttons/ -->
+                           <div class="social">
+                               <a href="https://www.linkedin.com/in/jacoblett" id="share-li" class="sharer button"><i class="fab fa-2x fa-linkedin pr-1"></i></a>
+                               <a href="https://github.com/JacobLett" id="share-gh" class="sharer button"><i class="fab fa-2x fa-github-square pr-1"></i></a>
+                               <a href="https://www.facebook.com/bootstrapcreative/" id="share-fb" class="sharer button"><i class="fab fa-2x fa-facebook-square pr-1"></i></a>
+                               <a href="https://twitter.com/BootstrapC" id="share-tw" class="sharer button"><i class="fab fa-2x fa-youtube-square pr-1"></i></a>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <!-- .col-sm-6 -->
+               <div class="col-md-9">
+                   <h4 class="mt-4 mt-md-0" id="contact">Contact Us</h4>
+                   <div class="row">
+                       <div class="col-sm-5">
+                           <!--
+                           Generate your local business schema own
+                           https://supple.com.au/tools/local-business-schema-generator/
+                            -->
+                           <div itemscope itemtype="http://schema.org/LocalBusiness">
+                               <a itemprop="url" href="https://bootstrapcreative.com/">
+                                   <div itemprop="name"><strong>BootstrapCreative</strong></div>
+                               </a>
+                               <div itemprop="description"><em>Design + Development + Marketing</em></div>
+                               <br>
+                               <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                   <span itemprop="streetAddress">12345 Street Address</span>,
+                                   <br>
+                                   <span itemprop="addressLocality">City Name</span>,
+                                   <br>
+                                   <span itemprop="addressRegion">State</span>, <span itemprop="postalCode">Postcode</span>
+                                   <br>
+                                   <span itemprop="addressCountry">United States</span>.
+                                   <br>
+                               </div>
+                               <strong>Call : </strong><span itemprop="telephone"><a href="tel:1-586-894-8024">(586) 894-8024</a></span>
+                               <br>
+                           </div>
+                       </div>
+                       <div class="col-md-7">
+                           <form class="mt-4 mt-md-0">
+                               <div class="form-group">
+                                   <label for="formGroupExampleInput" class="sr-only">Name</label>
+                                   <input type="text" class="form-control bg-faded-4" id="name" placeholder="Name">
+                               </div>
+                               <div class="form-group">
+                                   <label for="formGroupExampleInput" class="sr-only">Email</label>
+                                   <input class="form-control bg-faded-4" type="email" value="" id="email" placeholder="Email">
+                               </div>
+                               <div class="form-group">
+                                   <label for="formGroupExampleInput" class="sr-only">Message</label>
+                                   <textarea class="form-control bg-faded-4" id="message" rows="3" placeholder="Message"></textarea>
+                               </div>
+                               <div class="custom-control custom-checkbox">
+                                 <input type="checkbox" class="custom-control-input" id="spam">
+                                 <label class="custom-control-label" for="spam">Are you a human?</label>
+                               </div>
+                               <button type="submit" class="btn btn-secondary btn-sm mt-2">Send Message</button>
+                           </form>
+                       </div>
+                   </div>
+                   <!-- .col-sm-6 -->
+               </div>
+           </div>
+           <p class="mt-5">
+               <hr class="bg-faded-3">
+               <small class="text-light">
+               © BootstrapCreative · <a href="#" class="text-light">Privacy</a> · <a href="#" class="text-light">Terms</a>
+             </small>
+           </p>
+       </div><!-- .container -->
+   </footer>
+
+
+
+
+    <!--
+    ####################################################
+    J A V A S C R I P T - jquery, bootstrap, plugins
+    Placed at the end of the document so the pages load faster
+    ####################################################
+    -->
+
+    <!-- jQuery - Grab from a CDN and if not available grab a local copy -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- local fallback in case the CDN is down -->
+    <script>
+      window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
+    </script>
+
+    <!-- Bootstrap core JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+
+
+    <!-- Custom Javascript -->
+    <script src="js/homepage.js"></script>
+
+    <!-- Defer scripts that are not critical to the initial page load. -->
+    <script type="text/javascript">
+      function downloadJSAtOnload() {
+      var element = document.createElement("script");
+      // Your scripts would go inside this defer.js
+      // Use case would be "enhancements" like animations, share buttons, etc.
+      element.src = "js/defer.js";
+      document.body.appendChild(element);
+      }
+      if (window.addEventListener)
+      window.addEventListener("load", downloadJSAtOnload, false);
+      else if (window.attachEvent)
+      window.attachEvent("onload", downloadJSAtOnload);
+      else window.onload = downloadJSAtOnload;
+    </script>
+
+    <!-- Google Analytics code goes here if needed -->
+
+</body>
+
+</html>
