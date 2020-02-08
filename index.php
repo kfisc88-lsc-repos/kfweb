@@ -1,4 +1,5 @@
-<?php include 'templates/header.html' ?>
+<?php include 'templates/head.html'; ?>
+<?php include 'templates/navbar.html'; ?>
 
 <!-- Heading -->
 <div class="container">
@@ -45,4 +46,4 @@
 </div>
 <!-- /Cards -->
 
-<?php include 'templates/footer.html' ?>
+<?php include 'templates/footer.html'; ?>
