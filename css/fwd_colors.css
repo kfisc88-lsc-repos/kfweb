@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Tajawal&display=swap');
+
+body {
+    font-family: 'Tajawal', sans-serif;
+}
+
+/* Colors */
+.fc-primary     {color: #F6F7EB !important;}
+.fc-secondary   {color: #449DD1 !important;}
+.fc-tertiary    {color: #E94F37 !important;}
+.fc-quaternary  {color: #393E41 !important;}
+.fc-quinary     {color: #171717 !important;}
+
+.bgc-primary    {background-color: #F6F7EB !important;}
+.bgc-secondary  {background-color: #449DD1 !important;}
+.bgc-tertiary   {background-color: #E94F37 !important;}
+.bgc-quaternary {background-color: #393E41 !important;}
+.bgc-quinary    {background-color: #171717 !important;}
+
+.border-color-primary     {border-color: #F6F7EB !important;}
+.border-color-secondary   {border-color: #449DD1 !important;}
+.border-color-tertiary    {border-color: #E94F37 !important;}
+.border-color-quaternary  {border-color: #393E41 !important;}
+.border-color-quinary     {border-color: #171717 !important;}
+
+.header-hr {
+    border: 0;
+    height: 1px;
+    background: #F6F7EB;
+    background-image: linear-gradient(to right, #F6F7EB, #449DD1, #F6F7EB);
+}
+
+.footer-hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0));
+}
