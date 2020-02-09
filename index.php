@@ -34,11 +34,11 @@
         </div>
         <div class="col mb-4">
             <div class="card mx-auto h-100 w-100" style="width: 18rem;">
-                <img src="img/gmhero.png" class="card-img-top" alt="Screenshot of GM Hero Homepage">
+                <img src="img/bs_gmhero.png" class="card-img-top" alt="Screenshot of GM Hero Homepage">
                 <div class="card-body shadow">
                     <h5 class="card-title">GM Hero (Bootstrap)</h5>
                     <p class="card-text">Bootstrapped version of GM Hero</p>
-                    <a href="#" class="btn font-weight-bold bgc-secondary fc-primary">Check it out!</a>
+                    <a href="bs_gmhero/index.html" class="btn font-weight-bold bgc-secondary fc-primary">Check it out!</a>
                 </div>
             </div>
         </div>

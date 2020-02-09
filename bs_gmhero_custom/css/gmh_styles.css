@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=El+Messiri&display=swap');
+
+/*__________________________________ Colors __________________________________*/
+
+.font-color-primary     {color: #DB5461 !important;}
+.font-color-secondary   {color: #292F36 !important;}
+.font-color-tertiary    {color: #384D48 !important;}
+.font-color-quaternary  {color: #F7FFF7 !important;}
+.font-color-quinary     {color: #6E7271 !important;}
+
+.bg-color-primary    {background-color: #DB5461 !important;}
+.bg-color-secondary  {background-color: #292F36 !important;}
+.bg-color-tertiary   {background-color: #384D48 !important;}
+.bg-color-quaternary {background-color: #F7FFF7 !important;}
+.bg-color-quinary    {background-color: #6E7271 !important;}
+
+.border-color-primary    {border-color: #DB5461 !important;}
+.border-color-secondary  {border-color: #292F36 !important;}
+.border-color-tertiary   {border-color: #384D48 !important;}
+.border-color-quaternary {border-color: #F7FFF7 !important;}
+.border-color-quinary    {border-color: #6E7271 !important;}
+
+
+/*_______________________________ Body Styles _______________________________*/
+body {
+    font-family: 'El Messiri', sans-serif;
+    color: #292f36;
+    background-color: #F7FFF7;
+    overflow-x: hidden;
+}
+
+/*______________________________ NavBar Styles ______________________________*/
+nav ul {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+nav li:active, nav li:link {
+    background-color: #384D48 !important;
+}
+
+nav li:hover, nav li:visited {
+    background-color: #6E7271 !important;
+}
+
+
+/*___________________________ Anchor/Button Styles ___________________________*/
+.btn-hover:hover, .btn-hover:visited  {
+    background-color: #f7fff7 !important;
+    color: #292f36;
+}
+
+.hover-action:hover, .hover-action:visited {
+    filter: opacity(0.9);
+}
+
+
+/*________________________________ HR Styles ________________________________*/
+.hr-style {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(56, 77, 72, 1), rgba(0, 0, 0, 0));
+}
+
+
+/*_______________________________ Image Styles _______________________________*/
+.darken-image:after {
+  content:"";
+  display:block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background: rgba(0,0,0,0.4);
+}
+
+
+/*_____________________________ Carousel Styles _____________________________*/
+.carousel-text {
+    font-size: 3vh;
+}
+
+.carousel-caption {
+    top: 30% !important;
+}
+
+.carousel-caption h1 {
+    font-size: 5vh;
+}
+
+
+/*____________________________ Symbol/Font Styles ____________________________*/
+.copy-symbol {
+    font-size: 0.5em !important;
+    vertical-align: top;
+}
