@@ -4,43 +4,216 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="'D&D' 'dungeons and dragons' ">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/gmh_styles.css">
+
+    <title>GM Hero</title>
   </head>
   <body>
+
     <!-- NavBar -->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
-      <a class="navbar-brand pr-3 border-right" href="#">GM Hero</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse d-flex border" id="navbarNav">
-        <ul class="navbar-nav">
-            <div class="nav-item active">
-                <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-            </div>
-            <div class="nav-item">
-                <a class="nav-link" href="#">Characters</a>
-            </div>
-            <div class="nav-item">
-                <a class="nav-link" href="#">NPCs</a>
-            </div>
-            <div class="nav-item">
-                <a class="nav-link" href="#">Encounters</a>
-            </div>
-            <div class="nav-item">
-                <a class="nav-link" href="#">Treasure</a>
-            </div>
-            <div class="nav-item">
-                <a class="nav-link" href="#">Worlds</a>
-            </div>
-        </ul>
-      </div>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light shadow bg-color-tertiary content-width">
+        <a class="navbar-brand pr-3 border-right font-weight-bold font-color-quaternary" href="index.html">GM Hero</a>
+        <button class="navbar-toggler border-color-primary bg-color-quaternary" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-fill w-100 mx-auto">
+                <li class="nav-item active">
+                    <a class="nav-item nav-link font-color-quaternary" href="index.html">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item nav-link font-color-quaternary" href="#">Characters</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item nav-link font-color-quaternary" href="#">NPCs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item nav-link font-color-quaternary" href="#">Encounters</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item nav-link font-color-quaternary" href="#">Treasure</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item nav-link font-color-quaternary" href="#">Worlds</a>
+                </li>
+            </ul>
+        </div>
     </nav>
     <!-- /NavBar -->
+
+    <!-- Carousel -->
+    <!-- Used 3600px x 1920px for image sizes -->
+    <div class="container-fluid px-0 px-md-5">
+        <div class="row">
+            <div class="col-md-9">
+                <div id="carouselCaptions" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselCaptions" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselCaptions" data-slide-to="1"></li>
+                    </ol>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="darken-image">
+                                <img src="img/dice-3600x1920.jpg" class="d-block img-fluid" alt="">
+                                <div class="carousel-caption d-none d-sm-block">
+                                    <h1>Take the work out of Game Mastering</h1>
+                                    <p class="carousel-text">Spend more time playing.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="darken-image">
+                                    <img src="img/kids-3600x1920.jpg" class="d-block img-fluid" alt="">
+                                <div class="carousel-caption d-none d-sm-block">
+                                    <h1>Gaming for All Ages</h1>
+                                    <p class="carousel-text">Rulesets for games for players of all ages</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        <!-- /Carousel -->
+        <!-- Login Form -->
+            <div class="col-md-3 mt-3 pl-md-0 px-5">
+                <form>
+                    <div class="form-group">
+                        <label for="inputEmail">Email address</label>
+                        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword">Password</label>
+                        <input type="password" class="form-control" id="inputPassword">
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="rememberMeCheckbox">
+                        <label class="form-check-label" for="rememberMeCheckbox">Remember Me</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary border-color-primary bg-color-primary btn-hover">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- /Login Form -->
+
+    <!-- Jumbotron -->
+    <div class="jumbotron bg-color-quaternary">
+        <h1 class="display-4">Create your free account</h1>
+        <p class="lead">Save your generated NPCs, treasure hordes, encounters, and more so you can spend less time preparing for your sessions and more time playing them.</p>
+        <hr class="my-4">
+        <p>Create a free account today, or get started with a GM Champion account and gain access to even more powerful tools!</p>
+        <a class="btn btn-primary btn-lg bg-color-primary border-color-primary btn-hover" href="#" role="button">Create Account</a>
+        <a class="btn btn-primary btn-lg bg-color-primary border-color-primary btn-hover" href="#" role="button">Learn more</a>
+    </div>
+    <!-- /Jumbotron -->
+
+    <!-- Card Group -->
+    <div class="container-fluid">
+        <h2 class="text-center mt-5">Choose your Ruleset</h2>
+        <hr class="mt-0 pt-0 hr-style">
+    </div>
+    <div class="container-fluid p-0 mx-auto">
+        <div class="row row-cols-1 row-cols-md-3">
+            <div class="col mb-4">
+                <div class="card h-100">
+                    <a class="hover-action" href="#">
+                        <img src="img/dnd.png" class="card-img-top" alt="Dungeons and dragons books">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Dungeons & Dragons 5e</h5>
+                        <p class="card-text">GM Hero was built with 5e in mind - get the most of our tools with the D&D ruleset.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card h-100">
+                    <a class="hover-action" href="#">
+                        <img src="img/pathfinder.png" class="card-img-top" alt="Pathfinder books">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Pathfinder 2.0</h5>
+                        <p class="card-text">Paizo's latest edition of the long-running Pathfinder ruleset. Jump into the all-new Pathfinder.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card h-100">
+                    <a class="hover-action" href="#">
+                        <img src="img/cypher.png" class="card-img-top" alt="Cypher system books">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">The Cypher System</h5>
+                        <p class="card-text">Monte Cook's Cypher System rulesets include Numenera, the Strange, and the Cypher System.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Card Group -->
+
+    <!-- Footer -->
+    <footer class="footer mt-auto bg-color-tertiary">
+        <div class="container-fluid p-5">
+            <div class="row row-cols-1 row-cols-md-3">
+
+                <!-- Useful Links -->
+                <div class="col">
+                        <h4 class="p-2 rounded text-center font-color-quaternary bg-color-secondary">Useful Links</h4>
+                    <div class="list-group text-center">
+                        <a href="https://dnd.wizards.com/" class="hover-action list-group-item list-group-item-action font-color-secondary bg-color-quinary">Dungeons & Dragons</a>
+                        <a href="https://www.paizo.com/" class="hover-action list-group-item list-group-item-action font-color-secondary bg-color-quinary">Paizo</a>
+                        <a href="https://www.montecookgames.com/" class="hover-action list-group-item list-group-item-action font-color-secondary bg-color-quinary">Monte Cook Games</a>
+                        <a href="https://ogl-srd5.com/" class="hover-action list-group-item list-group-item-action font-color-secondary bg-color-quinary">OGL SRD 5e Remastered</a>
+                        <a href="http://2e.aonprd.com/Default.aspx" class="hover-action list-group-item list-group-item-action font-color-secondary bg-color-quinary">Pathfinder Online Rules</a>
+                    </div>
+                </div>
+                <!-- /Useful Links -->
+
+
+                <!-- GM Hero Copyright -->
+                <div class="col text-center m-sm-auto py-5">
+                    <h3>GM Hero<span class="copy-symbol">&copy</span></h3>
+                    <p>Copyright 2020 by Kelley Fischer</p>
+                </div>
+                <!-- /GM Hero Copyright -->
+
+                <!-- Feedback Form -->
+                <form>
+                    <div class="form-group">
+                        <label for="inputName">Name</label>
+                        <input type="text" class="form-control" id="inputName">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail">Email</label>
+                        <input type="email" class="form-control" id="inputEmail">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputFeedback">Questions/Comments</label>
+                        <textarea class="form-control" id="inputFeedback" rows="3"></textarea>
+                    </div>
+                </form>
+                <!-- /Feedback Form -->
+            </div>
+        </div>
+    </footer>
+    <!-- /Footer -->
 
 
     <!-- Optional JavaScript -->
