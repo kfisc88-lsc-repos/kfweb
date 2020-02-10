@@ -38,7 +38,7 @@
                 <div class="card-body shadow">
                     <h5 class="card-title">GM Hero (Bootstrap)</h5>
                     <p class="card-text">Bootstrapped version of GM Hero</p>
-                    <a href="bs_gmhero/index.html" class="btn font-weight-bold bgc-secondary fc-primary">Check it out!</a>
+                    <a href="bs_gmhero_custom/index.html" class="btn font-weight-bold bgc-secondary fc-primary">Check it out!</a>
                 </div>
             </div>
         </div>

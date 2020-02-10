@@ -1,24 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=El+Messiri&display=swap');
 
-/*__________________________________ Colors __________________________________*/
-
-.font-color-primary     {color: #DB5461 !important;}
-.font-color-secondary   {color: #292F36 !important;}
-.font-color-tertiary    {color: #384D48 !important;}
-.font-color-quaternary  {color: #F7FFF7 !important;}
-.font-color-quinary     {color: #6E7271 !important;}
-
-.bg-color-primary    {background-color: #DB5461 !important;}
-.bg-color-secondary  {background-color: #292F36 !important;}
-.bg-color-tertiary   {background-color: #384D48 !important;}
-.bg-color-quaternary {background-color: #F7FFF7 !important;}
-.bg-color-quinary    {background-color: #6E7271 !important;}
-
-.border-color-primary    {border-color: #DB5461 !important;}
-.border-color-secondary  {border-color: #292F36 !important;}
-.border-color-tertiary   {border-color: #384D48 !important;}
-.border-color-quaternary {border-color: #F7FFF7 !important;}
-.border-color-quinary    {border-color: #6E7271 !important;}
+/*
+Colors
+    #DB5461
+    #292F36
+    #384D48
+    #F7FFF7
+    #6E7271
+*/
 
 
 /*_______________________________ Body Styles _______________________________*/
@@ -29,10 +18,27 @@ body {
     overflow-x: hidden;
 }
 
+
 /*______________________________ NavBar Styles ______________________________*/
+.navbar, .footer {
+    background-color: #384D48;
+}
+
 nav ul {
     padding-top: 0;
     padding-bottom: 0;
+}
+
+.navbar-brand {
+    color: #F7FFF7 !important;
+}
+
+.navbar-brand:hover, .navbar-brand:active {
+    color: #DB5461 !important;
+}
+
+.nav-item {
+    color: #F7FFF7 !important;
 }
 
 nav li:active, nav li:link {
@@ -45,39 +51,33 @@ nav li:hover, nav li:visited {
 
 
 /*___________________________ Anchor/Button Styles ___________________________*/
-.btn-hover:hover, .btn-hover:visited  {
+.btn-primary {
+    background-color: #DB5461 !important;
+    border-color: #DB5461 !important;
+}
+
+.btn-primary:hover, .btn-primary:active  {
     background-color: #f7fff7 !important;
+    border-color: #DB5461;
     color: #292f36;
 }
 
-.hover-action:hover, .hover-action:visited {
+.hover-action:hover, .hover-action:active {
     filter: opacity(0.9);
 }
 
-
-/*________________________________ HR Styles ________________________________*/
-.hr-style {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(56, 77, 72, 1), rgba(0, 0, 0, 0));
+.list-group-item {
+    color: #F7FFF7;
+    background-color: #6E7271;
 }
 
-
-/*_______________________________ Image Styles _______________________________*/
-.darken-image:after {
-  content:"";
-  display:block;
-  position:absolute;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  background: rgba(0,0,0,0.4);
+.list-group-item-action:hover, .list-group-item-action:active  {
+    filter: opacity(0.4);
 }
 
 
 /*_____________________________ Carousel Styles _____________________________*/
-.carousel-text {
+.carousel-caption p {
     font-size: 3vh;
 }
 
@@ -87,6 +87,27 @@ nav li:hover, nav li:visited {
 
 .carousel-caption h1 {
     font-size: 5vh;
+}
+
+
+/*_______________________________ Image Styles _______________________________*/
+.darken-image:after {
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background: rgba(0,0,0,0.4);
+}
+
+
+/*________________________________ HR Styles ________________________________*/
+.hr-style {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(56, 77, 72, 1), rgba(0, 0, 0, 0));
 }
 
 
