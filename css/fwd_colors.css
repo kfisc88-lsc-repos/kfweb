@@ -5,7 +5,7 @@ body {
 }
 
 /* Colors */
-.fc-primary     {color: #F6F7EB !important;}
+.text-primary     {color: #F6F7EB !important;}
 .fc-secondary   {color: #449DD1 !important;}
 .fc-tertiary    {color: #E94F37 !important;}
 .fc-quaternary  {color: #393E41 !important;}

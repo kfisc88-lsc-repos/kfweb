@@ -3,7 +3,7 @@
 
 <!-- Heading -->
 <div class="container">
-    <h1 class="text-center">Assignments</h1>
+    <h1 class="text-center">Bootstrap Assignments</h1>
     <hr class="header-hr mb-5">
 </div>
 <!-- /Heading -->
