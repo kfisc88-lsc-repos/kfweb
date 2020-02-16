@@ -16,10 +16,6 @@ $(document).ready(function() {
     $('a[href$=".pdf"]').addClass('pdflink')
     $('a[href^="http"][href*="henry"]').addClass('henrylink');
 
-    // $(document).ready(function() {
-    //     $('tr:even').addClass('alt');
-    // });
-
     // Creates banding for tables, adds bold/italics to all Henry plays
     $('tr:nth-child(odd)').addClass('alt');
     $('td:contains(Henry)').parent().children().addClass('highlight');
@@ -29,5 +25,18 @@ $(document).ready(function() {
         return this.hostname && this.hostname != location.hostname;
     }).addClass('external');
 
+    // Exercise 1
+    $('li li').addClass('special');
 
+    // Exercise 2
+    $('td:nth-child(3)').addClass('year');
+
+    // Exercise 3
+    $('tr').filter(':contains(Tragedy)').filter(':first').addClass('special');
+
+    // Exercise 4
+    $('li > a').parent().nextAll().addClass('afterlink');
+
+    // Exercise 5
+    $('a[href$=".pdf"]').closest('ul').addClass('tragedy');
 });
