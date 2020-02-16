@@ -16,10 +16,9 @@
         </button>
       </h2>
     </div>
-
     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#jqueryAssignments">
-      <div class="card-body">
-        <a href="../jQuery/Chapter 1/index.html">Chapter 1 Index Page</a> <!-- Change file location -->
+      <div class="list-group">
+        <a href="jQuery/ch1_index/index.html" class="list-group-item list-group-item-action">Chapter 1 Index Page</a>
       </div>
     </div>
   </div>
@@ -33,8 +32,8 @@
     </div>
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#jqueryAssignments">
         <div class="list-group">
-            <a href="../jQuery/Chapter 2/index.html" class="list-group-item">Chapter 2 Index Page</a> <!-- Change file location -->
-            <a href="#" class="list-group-item">Exercises</a>
+            <a href="jQuery/ch2_index/index.html" class="list-group-item list-group-action">Chapter 2 Index Page</a>
+            <a href="jQuery/ch2_index_exercises/index.html" class="list-group-item list-group-item-action">Exercises</a>
         </div>
     </div>
   </div>
@@ -47,8 +46,9 @@
       </h2>
     </div>
     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#jqueryAssignments">
-      <div class="card-body">
-      </div>
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action">empty</a>
+        </div>
     </div>
   </div>
 </div>
