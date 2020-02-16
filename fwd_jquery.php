@@ -32,7 +32,7 @@
     </div>
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#jqueryAssignments">
         <div class="list-group">
-            <a href="jQuery/ch2_index/index.html" class="list-group-item list-group-action">Chapter 2 Index Page</a>
+            <a href="jQuery/ch2_index/index.html" class="list-group-item list-group-item-action">Chapter 2 Index Page</a>
             <a href="jQuery/ch2_index_exercises/index.html" class="list-group-item list-group-item-action">Exercises</a>
         </div>
     </div>
