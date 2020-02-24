@@ -11,6 +11,7 @@
     <!-- Collapsible Container -->
     <div class="container">
         <div class="accordion" id="jqueryAssignments">
+
             <div class="card">
                 <div class="card-header" id="headingOne">
                     <h2 class="mb-0">
@@ -25,6 +26,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="card">
                 <div class="card-header" id="headingTwo">
                     <h2 class="mb-0">
@@ -40,6 +42,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="card">
                 <div class="card-header" id="headingThree">
                     <h2 class="mb-0">
@@ -50,10 +53,13 @@
                 </div>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#jqueryAssignments">
                     <div class="list-group">
-                        <a href="#" class="list-group-item list-group-item-action">empty</a>
+                        <a href="jQuery/ch3_index/index.html" class="list-group-item list-group-item-action">Chapter 3 Index Page</a>
+                        <a href="jQuery/ch3_index_exercises/index.html" class="list-group-item list-group-item-action">Exercises</a>
                     </div>
                 </div>
             </div>
+
+
         </div>
     </div>
     <!-- /Collapsible Container -->

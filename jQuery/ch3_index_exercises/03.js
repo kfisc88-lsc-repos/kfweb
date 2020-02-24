@@ -61,14 +61,13 @@ $(document).ready(function() {
             setBodyClass(triggers[key]);
         }
     });
-});
 
 
 // Begin assignments
-$(document).ready(function() {
+
 /*-------------------------- Exercise 1 --------------------------*/
 
-    //
+    // Adds the 'selected' class to any element of the 'author' class
     $('.author').click(function() {
         $(this).addClass('selected');
     });
@@ -82,6 +81,28 @@ $(document).ready(function() {
     });
 
 /*-------------------------- Exercise 3 --------------------------*/
+
+    // List of body classes
+    var triggerNumbers = [
+        'default',
+        'narrow',
+        'large'
+    ];
+    // Counter variable for key presses
+    var cycleNext = 0;
+    $(document).keyup(function(rArrow) {
+        var key = rArrow.keyCode;
+        // Tests keydown for right arrow key and changes body classes
+        if ((key == 39) && (cycleNext <= 2)) {
+            setBodyClass(triggerNumbers[cycleNext]);
+            if (cycleNext < 2) {
+                cycleNext++;
+            }
+            else {
+                cycleNext = 0;
+            }
+        }
+    });
 
 
 /*-------------------------- Exercise 4 --------------------------*/
