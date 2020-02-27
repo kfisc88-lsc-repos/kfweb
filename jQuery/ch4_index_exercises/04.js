@@ -11,6 +11,7 @@ $(document).ready(function() {
 
   /*-------------------------------- Exercise 1 --------------------------------*/
   $('body').fadeIn('slow');
+
   /*-------------------------------- Exercise 2 --------------------------------*/
   var currentBackground;
   $('p').hover(function() {
@@ -18,11 +19,43 @@ $(document).ready(function() {
     $(this).css('backgroundColor', 'yellow');
   }, function() {
     $(this).css('backgroundColor', currentBackground);
-  });(function(event) {
   });
+
   /*-------------------------------- Exercise 3 --------------------------------*/
+  $('h2').eq(0).click(function() {
+    var $title = $(this);
+    $title
+    .animate({
+      opacity: '0.25',
+      marginLeft: '20px'
+    }, 'slow')
+    .queue(function(next) {
+      $('p').fadeTo('slow', 0.5);
+      next();
+    })
+  });
 
   /*-------------------------------- Exercise 4 --------------------------------*/
+
+  $(document).keydown(function(event) {
+    var key = event.keyCode;
+    var $switcher = $('#switcher');
+    $switcher.css('position', 'relative');
+    switch (key) {
+      case 37:
+        $switcher.animate({left: '-=20px'}, 'slow');
+        break;
+      case 38:
+        $switcher.animate({top: '-=20px'}, 'slow');
+        break;
+      case 39:
+        $switcher.animate({right: '-=20px'}, 'slow');
+        break;
+      case 40:
+        $switcher.animate({bottom: '-=20px'}, 'slow');
+        break;
+      }
+    });
 
   // End Assignments
 
